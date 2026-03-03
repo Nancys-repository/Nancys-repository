@@ -8,7 +8,7 @@ body {
 
     padding: 0; 
 
-    background-color: #E6F7FF;
+    background-color: #87CEEB;
 
     color: #333; 
 
@@ -24,7 +24,7 @@ body {
 
 nav { 
 
-    background-color: #333; 
+    background-color: #0A3D62;
 
     padding: 15px; 
 
@@ -40,7 +40,7 @@ nav a {
 
     text-decoration: none; 
 
-    margin: 0 15px; 
+    margin: 0 20px; 
 
 } 
 
@@ -58,18 +58,23 @@ nav a:hover {
 
 header { 
 
-    background-color: dodgerblue;
+    background-color: #1E90FF;
 
     color: white; 
 
-    padding: 30px; 
+    padding: 25px; 
 
-    text-align: left; 
+    text-align: center; 
 
 } 
+section {
+    margin-bottom: 30px;
+}
 
- 
+ul {
 
+    padding0left: 20px;
+    
 /* Main Content */ 
 
 main { 
@@ -114,5 +119,6 @@ img {
 
 
  
+
 
 
