@@ -1,86 +1,77 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pink Star Content</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="star-container">
-        <div class="star-content">
-            <h1>My Content</h1>
-            <p>Hover over me to see the color change!</p>
-        </div>
-    </div>
-</body>
-</html>
-CSS Code (styles.css)
-css
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+ 
+/* BODY LAYOUT */
 body {
-    /* Sets the background color of the entire page to baby pink */
-    background-color: #F4C2C2; /* A shade of baby pink */
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #87CEEB; /* Sky Blue */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
-    margin: 0;
-    font-family: sans-serif;
 }
  
-.star-container {
-    /* Creates the star shape using clip-path and sets the initial pink color */
-    width: 300px;
-    height: 300px;
-    background-color: #FFB6C1; /* A light pink shade */
-    clip-path: polygon(
-        50% 0%, 
-        61% 35%, 
-        98% 35%, 
-        68% 57%, 
-        79% 91%, 
-        50% 70%, 
-        21% 91%, 
-        32% 57%, 
-        2% 35%, 
-        39% 35%
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: background-color 0.5s ease; /* Smooth transition for color change */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* NAVIGATION */
+nav {
+    background-color: #0A3D62;
+    padding: 15px 40px;
 }
  
-.star-container:hover {
-    /* Changes the star color on hover */
-    background-color: #FF69B4; /* Hot pink color on hover */
-}
- 
-.star-content {
-    /* Styles for the content inside the star */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+nav a {
     color: white;
-    padding: 10px;
-    /* Adjust width as needed so it fits within the star shape */
-    width: 80%; 
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 500;
 }
  
-.star-content h1 {
-    margin: 0;
-    font-size: 1.5em;
+nav a:hover {
+    color: #FFD700;
 }
  
-.star-content p {
-    margin: 5px 0 0;
-    font-size: 0.9em;
+/* PAGE CONTAINER */
+main {
+    flex: 1;
+    width: 75%;
+    margin: 40px 0 40px 60px; /* pushes content slightly left */
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
 }
  
+/* HEADER SECTION */
+header {
+    padding: 30px 60px;
+}
+ 
+/* MAIN HEADING */
+h1 {
+    font-family: 'Playfair Display', serif;  /* Elegant font */
+    font-size: 42px;
+    color: #0A3D62;
+    margin-bottom: 10px;
+}
+ 
+/* SUB HEADINGS */
+h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #1E90FF;
+    margin-top: 30px;
+}
+ 
+/* PARAGRAPH */
+p {
+    line-height: 1.7;
+    color: #444;
+}
+ 
+/* FOOTER */
+footer {
+    background-color: #0A3D62;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+ 
+
 
