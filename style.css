@@ -1,3 +1,5 @@
+ 
+
 /* Global Styles */ 
 
 body { 
@@ -8,13 +10,9 @@ body {
 
     padding: 0; 
 
-    background-color: #87CEEB;
+    background-color: #95B9C7;
 
     color: #333; 
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 
 } 
 
@@ -24,7 +22,7 @@ body {
 
 nav { 
 
-    background-color: #0A3D62;
+    background-color: #95B9C7;
 
     padding: 15px; 
 
@@ -40,7 +38,7 @@ nav a {
 
     text-decoration: none; 
 
-    margin: 0 20px; 
+    margin: 0 15px; 
 
 } 
 
@@ -58,34 +56,27 @@ nav a:hover {
 
 header { 
 
-    background-color: #1E90FF;
+    background-color:  #566D7E;
 
     color: white; 
 
-    padding: 25px; 
+    padding: 30px; 
 
     text-align: center; 
 
 } 
-section {
-    margin-bottom: 30px;
-}
 
-ul {
+ 
 
-    padding0left: 20px;
-    
 /* Main Content */ 
 
 main { 
 
-    flex: 1;
-    
     padding: 20px; 
 
     max-width: 800px; 
 
-    margin: 40px auto;
+    margin: 0 auto; 
 
 } 
 
@@ -95,13 +86,15 @@ main {
 
 footer { 
 
-    background-color: #1B1464;
+    background-color: #566D7E; 
 
     color: white; 
 
     text-align: center; 
 
     padding: 15px; 
+
+    margin-top: 30px; 
 
 } 
 
@@ -119,6 +112,7 @@ img {
 
 
  
+
 
 
 
