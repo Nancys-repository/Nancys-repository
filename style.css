@@ -1,9 +1,4 @@
- 
 
-can i have a css code that makes colors change and my content to be in a star,a pink star and the other background to be baby pink
-You can achieve the desired effect using a combination of HTML and CSS. The main page background will be a baby pink color, and your content will reside within a pink star shape whose color changes on hover.
-HTML Code
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,3 +83,4 @@ body {
     font-size: 0.9em;
 }
  
+
