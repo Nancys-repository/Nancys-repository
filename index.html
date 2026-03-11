@@ -1,62 +1,106 @@
-<!DOCTYPE html> 
-
-<html lang="en"> 
-
-<head> 
-
-    <meta charset="UTF-8"> 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-    <title>Home-Nancy Wamakala</title> 
-    
-    <link rel="stylesheet" href="style.css">
-
-</head> 
-
-<body> 
-
-    <nav> 
-
-    <a href="index.html">Home</a> 
-
-    <a href="about.html">About</a> 
-
-    <a href="projects.html">Projects</a> 
-
-    <a href="resume.html">Resume</a> 
-
-    <a href="contact.html">Contact</a> 
-
-</nav> 
-
-<header>
-    <h1>Nancy Wamakala</h1>
-    <p>Aspiring Web Developer and Data Analytics</p>
-    
-</header>
-
-<main>
-    <section>
-        <h2>Welcome to My Portfolio</h2>
-        <p> 
-            I am passionate about technology, web development and data analytics.
-            I enjoy creatingwebsites and learning how data helps businesses make better decisions.
-        </p>
-    </section>
-
-    <section>
-        <h2> Quick Links</h2>
-        <a href="projects.html">View My Projects</a>
-        <a href="contact.html">Contact me</a>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2026 Nancy A. Wamakala</p>
-</footer>
-
-</body> 
-
-</html> 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nancy Wamakala Portfolio</title>
+ 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+ 
+<style>
+ 
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f4f6f8;
+color:#333;
+}
+ 
+/* NAVIGATION */
+nav{
+background:#0f172a;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+ 
+.logo{
+font-family:'Playfair Display',serif;
+font-size:24px;
+color:#22c55e;
+font-weight:600;
+}
+ 
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+margin:0;
+padding:0;
+}
+ 
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+ 
+nav ul li a:hover{
+color:#22c55e;
+}
+ 
+/* HERO IMAGE */
+.hero{
+height:320px;
+background-image:url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+ 
+.hero h1{
+background:rgba(0,0,0,0.6);
+color:white;
+padding:20px 40px;
+border-radius:8px;
+font-size:40px;
+letter-spacing:2px;
+}
+ 
+/* CONTENT */
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+ 
+.intro{
+font-size:18px;
+line-height:1.7;
+margin-bottom:30px;
+}
+ 
+/* QUICK LINKS */
+.quick-links{
+display:flex;
+gap:20px;
+margin-top:20px;
+}
+ 
+.card{
+flex:1;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
+}
+ 
+.card:hover{
+transform:translateY(-6px)
  
