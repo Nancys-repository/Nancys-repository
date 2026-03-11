@@ -8,11 +8,25 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <title>Resume-Nancy Wamakala</title>\
-    <link rel="stylesheet" href="style.css"> 
-
+    <title>Resume-Nancy Wamakala</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    
 </head> 
-
+<script>
+ 
+function toggleExperience(){
+document.getElementById("experience").classList.toggle("show");
+}
+ 
+function toggleSkills(){
+document.getElementById("skills").classList.toggle("show");
+}
+ 
+function toggleTech(){
+document.getElementById("tech").classList.toggle("show");
+}
+ 
+</script>
 <body> 
 
     <nav> 
@@ -29,36 +43,41 @@
 
 </nav> 
 <header>
-    <h1>My Resume</h1>
+   <div class="section">
+ 
+<h1>My Resume</h1>
+ 
+<div class="star-card">
+ 
+<h2 class="gold-title" onclick="toggleExperience()">Experience</h2>
+ 
+<div id="experience" class="hidden">
+<p>Built websites using HTML and CSS.</p>
+<p>Practiced version control using GitHub.</p>
+</div>
+ 
+</div>
+ 
+ 
+<div class="star-card">
+ 
+<h2 class="gold-title" onclick="toggleSkills()">Skills</h2>
+ 
+<div id="skills" class="hidden">
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>GitHub</li>
+<li>Data Analytics</li>
+</ul>
+</div>
+</div>   
 </header>
-<main>
-    <section>
-        <h2>+267 78119183/ +267 71750854</h2>
-        <p>wamakalanancy@gmail.com</p>
-        <p>2025- Present</p>
-        <p>Studies related to Data Analytics and Information Technology</p>
-    </section>
-
-    <section>
-        <h2>Experience</h2>
-        <p>
-            Built websites using HTML and CSS practiced version control using GitHub.
-        </p>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Github</li>
-            <li>Data Analytics</li>
-        </ul>
-    </section>
 </main>
 <footer>
     <p>&copy; 2026 Nancy Wamakala</p>
 </footer>
 </body> 
+
 
 </html> 
