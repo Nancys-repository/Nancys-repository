@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
     <title>Projects-Nancy Wamakala</title> 
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 </head> 
 
@@ -28,29 +28,109 @@
     <a href="contact.html">Contact</a> 
 
 </nav> 
-<header>
-    <h1>My Projects</h1>
-</header>
- <main>
-
-    <article>
-        <h2>Personal Portfolio Website</h2>
-        <p>
-            A personal portfolio website built using HTML and CSS to showcase my skills,
-            projects and learning progress.
-        </p>
-
-        <h3>Technologies Used:</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ul>
-    </article>
- </main>
- <footer>
-    <p>&copy; 2026 Nancy Wamakala</p>
- </footer>
+ body{
+font-family:'Poppins',sans-serif;
+background:#f4f6f8;
+margin:0;
+}
  
-</body> 
-
-</html> 
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+}
+ 
+.section{
+max-width:1000px;
+margin:auto;
+padding:40px;
+}
+ 
+/* GOLD TITLES */
+.gold-title{
+color:#D4AF37;
+cursor:pointer;
+}
+ 
+/* STAR CARDS */
+ 
+.star-card{
+background:white;
+padding:30px;
+margin:20px 0;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+position:relative;
+transition:0.3s;
+}
+ 
+.star-card:hover{
+transform:translateY(-6px);
+}
+ 
+/* star decoration */
+ 
+.star-card:before{
+content:"★";
+color:#D4AF37;
+font-size:28px;
+position:absolute;
+top:-15px;
+left:-10px;
+}
+ 
+/* hidden content */
+ 
+.hidden{
+display:none;
+margin-top:15px;
+}
+ 
+.show{
+display:block;
+}
+    <div class="section">
+ 
+<h1>My Projects</h1>
+ 
+<div class="star-card">
+ 
+<h2>Personal Portfolio Website</h2>
+ 
+<p>A personal portfolio website built using HTML and CSS.</p>
+ 
+<h3 class="gold-title" onclick="toggleTech()">Technologies Used</h3>
+ 
+<div id="tech" class="hidden">
+ 
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+ 
+</ul>
+ 
+</div>
+ 
+</div>
+ 
+</div>
+<script>
+ 
+function toggleExperience(){
+document.getElementById("experience").classList.toggle("show");
+}
+ 
+function toggleSkills(){
+document.getElementById("skills").classList.toggle("show");
+}
+ 
+function toggleTech(){
+document.getElementById("tech").classList.toggle("show");
+}
+ 
+</script>
+    
+    <footer>
+<p>© 2026 Nancy A. Wamakala | Aspiring Web Developer & Data Analyst</p>
+</footer>
+ 
+</body>
+</html>
