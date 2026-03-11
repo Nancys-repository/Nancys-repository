@@ -10,7 +10,21 @@
 
     <title>Resume-Nancy Wamakala</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-    
+  
+    /* Styling your name */
+header h1, .name-class {
+    color: #FFD700; /* Standard Gold */
+}
+ 
+/* Styling the navigation links */
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none; /* Optional: removes the underline */
+}
+ 
+nav ul li a:hover {
+    color: #DAA520; /* A slightly darker gold for when you hover over them */
+}
 </head> 
 <script>
  
@@ -75,9 +89,22 @@ document.getElementById("tech").classList.toggle("show");
 </header>
 </main>
 <footer>
+    footer {
+    background-color: #FFD700; /* Gold background */
+    color: #000;              /* Black text for better contrast on gold */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    
+    /* This helps push it to the bottom of the viewport if the page is short */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
     <p>&copy; 2026 Nancy Wamakala</p>
 </footer>
 </body> 
 
 
 </html> 
+
