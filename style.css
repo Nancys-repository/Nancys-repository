@@ -51,6 +51,41 @@ footer {
   to {
     transform: rotateY(0);
   }
+nav {
+  background: #0b2545;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* LINKS */
+nav a {
+  color: #38bdf8; /* light blue text */
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* ICONS */
+nav a i {
+  color: #020617; /* navy blue icons */
+  font-size: 18px;
+}
+
+/* HOVER EFFECT */
+nav a:hover {
+  background: #1e3a8a;
+  color: #facc15; /* gold on hover */
+}
+
+nav a:hover i {
+  color: white;
 }
 
 /* TEXT */
