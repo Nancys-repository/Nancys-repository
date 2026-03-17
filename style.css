@@ -5,7 +5,60 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
 }
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
 
+.diagonal-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform: rotate(-5deg);
+  margin: 10px;
+}
+
+.nav-icon:nth-child(1) {
+  transform: rotate(-10deg) translateY(0px);
+}
+
+.nav-icon:nth-child(2) {
+  transform: rotate(-5deg) translateY(10px);
+}
+
+.nav-icon:nth-child(3) {
+  transform: rotate(5deg) translateY(20px);
+}
+
+.nav-icon:nth-child(4) {
+  transform: rotate(10deg) translateY(30px);
+}
+
+.nav-icon i {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.nav-icon span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.nav-icon:hover {
+  color: #007bff;
+  transform: scale(1.1) !important;
+}
 body {
   background: #cfe8ff; /* light blue */
   display: flex;
