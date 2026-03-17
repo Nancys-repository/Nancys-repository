@@ -1,111 +1,91 @@
-/* Global Styles */ 
 
-body { 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-    font-family: Arial, sans-serif; 
+body {
+  background: #cfe8ff; /* light blue */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-    margin: 0; 
+/* HEADER & FOOTER */
+header, footer {
+  background: #0a1f44; /* navy */
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
 
-    padding: 0; 
+footer {
+  margin-top: auto;
+}
 
-    background-color: #f9f9f9; 
+/* MAIN */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+}
 
-    color: #333; 
+/* CARD */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transform: rotateY(90deg);
+  animation: flipIn 1s forwards;
+}
 
-} 
+@keyframes flipIn {
+  to {
+    transform: rotateY(0);
+  }
+}
 
- 
+/* TEXT */
+h2 {
+  margin-bottom: 15px;
+  color: #0a1f44;
+}
 
-/* Navigation */ 
+p {
+  margin: 10px 0;
+  color: #333;
+}
 
-nav { 
+/* ICONS */
+.icon {
+  color: #0a1f44;
+  margin-right: 8px;
+}
 
-    background-color: #333; 
+/* BUTTONS */
+.links {
+  margin-top: 20px;
+}
 
-    padding: 15px; 
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  background: #0a1f44;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-    text-align: center; 
-
-} 
-
- 
-
-nav a { 
-
-    color: white; 
-
-    text-decoration: none; 
-
-    margin: 0 15px; 
-
-} 
-
- 
-
-nav a:hover { 
-
-    text-decoration: underline; 
-
-} 
-
- 
-
-/* Headers */ 
-
-header { 
-
-    background-color: #4CAF50; 
-
-    color: white; 
-
-    padding: 30px; 
-
-    text-align: center; 
-
-} 
-
- 
-
-/* Main Content */ 
-
-main { 
-
-    padding: 20px; 
-
-    max-width: 800px; 
-
-    margin: 0 auto; 
-
-} 
-
- 
-
-/* Footer */ 
-
-footer { 
-
-    background-color: #333; 
-
-    color: white; 
-
-    text-align: center; 
-
-    padding: 15px; 
-
-    margin-top: 30px; 
-
-} 
-
- 
-
-/* Images */ 
-
-img { 
-
-    border-radius: 10px; 
-
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-
-} 
-
- 
+.btn:hover {
+  background: #163a7a;
+}
