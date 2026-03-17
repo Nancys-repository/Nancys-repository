@@ -1,110 +1,80 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume - Nancy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<html lang="en"> 
+<body>
 
-<head> 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-    <meta charset="UTF-8"> 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-    <title>Resume-Nancy Wamakala</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-  
-    /* Styling your name */
-header h1, .name-class {
-    color: #FFD700; /* Standard Gold */
-}
- 
-/* Styling the navigation links */
-nav ul li a {
-    color: #FFD700;
-    text-decoration: none; /* Optional: removes the underline */
-}
- 
-nav ul li a:hover {
-    color: #DAA520; /* A slightly darker gold for when you hover over them */
-}
-</head> 
-<script>
- 
-function toggleExperience(){
-document.getElementById("experience").classList.toggle("show");
-}
- 
-function toggleSkills(){
-document.getElementById("skills").classList.toggle("show");
-}
- 
-function toggleTech(){
-document.getElementById("tech").classList.toggle("show");
-}
- 
-</script>
-<body> 
-
-    <nav> 
-
-    <a href="index.html">Home</a> 
-
-    <a href="about.html">About</a> 
-
-    <a href="projects.html">Projects</a> 
-
-    <a href="resume.html">Resume</a> 
-
-    <a href="contact.html">Contact</a> 
-
-</nav> 
 <header>
-   <div class="section">
- 
-<h1>My Resume</h1>
- 
-<div class="star-card">
- 
-<h2 class="gold-title" onclick="toggleExperience()">Experience</h2>
- 
-<div id="experience" class="hidden">
-<p>Built websites using HTML and CSS.</p>
-<p>Practiced version control using GitHub.</p>
-</div>
- 
-</div>
- 
- 
-<div class="star-card">
- 
-<h2 class="gold-title" onclick="toggleSkills()">Skills</h2>
- 
-<div id="skills" class="hidden">
-<ul>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>GitHub</li>
-<li>Data Analytics</li>
-</ul>
-</div>
-</div>   
+  <h1 style="color:#38bdf8;">My Resume</h1>
 </header>
-</main>
+
+<div class="container">
+
+  <div class="card">
+    <h2>💼 Professional Summary</h2>
+    <p>
+      Aspiring software developer with strong skills in web development
+      and data analytics. Passionate about solving real-world problems
+      using clean and efficient code.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>📌 Experience</h2>
+    <ul>
+      <li>Built responsive websites using HTML & CSS</li>
+      <li>Version control using GitHub</li>
+      <li>Created personal portfolio projects</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🧠 Technical Skills</h2>
+
+    <div class="skills">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">GitHub</div>
+      <div class="skill">Data Analysis</div>
+      <div class="skill">Problem Solving</div>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <h2>🎓 Education</h2>
+    <p>
+      Student focused on web development and data analytics,
+      continuously learning modern technologies.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>🌟 Projects</h2>
+    <ul>
+      <li>Portfolio Website</li>
+      <li>Responsive Landing Pages</li>
+      <li>Data Visualization Projects</li>
+    </ul>
+  </div>
+
+</div>
+
 <footer>
-    footer {
-    background-color: #FFD700; /* Gold background */
-    color: #000;              /* Black text for better contrast on gold */
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-    
-    /* This helps push it to the bottom of the viewport if the page is short */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-    <p>&copy; 2026 Nancy Wamakala</p>
+  <p>© 2026 Nancy Wamakala | Web Developer</p>
 </footer>
-</body> 
 
-
-</html> 
+</body>
+</html>
 
