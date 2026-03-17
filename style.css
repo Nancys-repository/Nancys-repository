@@ -68,7 +68,13 @@ p {
 .icon {
   color: #0a1f44;
   margin-right: 8px;
-}
+  
+  .skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+  }
 
 /* BUTTONS */
 .links {
